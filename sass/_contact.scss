@@ -1,0 +1,181 @@
+.contact {
+    width: 90%;
+    height: 100vh;
+    min-height: 750px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__title {
+        display: inline-block;
+        text-align: center;
+        //width: 20%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        font-size: 3.2rem;
+        padding-bottom: 5px;
+        border-bottom: 2px solid $carrot;
+    }
+
+    &__desc {
+        font-size: 1.9rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__form {
+        width: 75%;
+        height: 80rem;
+        min-width: 500px;
+        max-height: 600px;
+        min-height: 500px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4.5px rgba(0, 0, 0, .4);
+        background-color: $white-color;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 3rem 10rem;
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 560px) {
+            min-width: 450px;
+        }
+        @media screen and (max-width: 560px) {
+            min-width: 450px;
+        }
+
+        @media screen and (max-width: 460px) {
+            width: 90%;
+            padding: 3rem 6rem;
+            min-width: 350px;
+        }
+
+        @media screen and (max-width: 350px) {
+            min-width: 300px;
+            padding: 3rem 4rem;
+        }
+
+        &-namelab,
+        &-maillab,
+        &-msglab {
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+        }
+
+        &-nameinput,
+        &-mailinput,
+        &-msginput {
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.445);
+            width: 100%;
+            padding: 1rem;
+            font-family: inherit;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            transition: all .6s;
+        }
+
+        &-nameinput:focus,
+        &-mailinput:focus,
+        &-msginput:focus {
+            outline: none;
+            border-bottom: 2px solid $carrot;
+        }
+
+        &-submit {
+            margin-top: 3rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            padding: 1.5rem 3.5rem;
+            width: 100%;
+            font-family: inherit;
+            font-size: 1.7rem;
+            color: $white-color;
+            background-color: $carrot;
+            transition: all .3s;
+        }
+
+        &-submit:hover {
+            background-color: $white-color;
+            color: $carrot;
+            border: 2px solid $carrot;
+            transform: scale(1.05);
+            backface-visibility: hidden;
+        }
+    }
+}
+
+.love {
+    width: 100%;
+    height: 60vh;
+    min-height: 450px;
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 5rem;
+
+    @media screen and (max-width: 600px) {
+        min-height: 900px;
+        padding: 2rem 4rem;
+    }
+
+    &__title {
+        display: inline-block;
+        color: $white-color;
+        //width: 20%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+        padding-bottom: 1px;
+        border-bottom: 2px solid $carrot;
+        text-align: center;
+
+        @media screen and (max-width: 380px) {
+            border-bottom: none;
+        }
+
+        span {
+            display: inline-block;
+            transform: translateY(10px);
+            font-size: 7rem;
+            color: rgb(206, 22, 22);
+        }
+    }
+
+    &__desc {
+        font-size: 2rem;
+        color: $white-color;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    &__brands {
+        width: 45%;
+
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-brand {
+            font-size: 8rem;
+            color: rgba(187, 187, 187, 0.5);
+
+            @media screen and (max-width: 600px) {
+                font-size: 11rem;
+            }
+        }
+    }
+}
